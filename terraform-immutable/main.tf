@@ -7,7 +7,7 @@ module "app-module" {
   APP_VERSION      = var.APP_VERSION
   APP_PORT         = 80
   LB_RULE_PRIORITY = 200
-  LB_PRIVATE       = false
+  LB_TYPE          = "public"
   MIN_SIZE         = var.MIN_SIZE
   MAX_SIZE         = var.MAX_SIZE
 }

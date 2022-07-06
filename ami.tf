@@ -1,11 +1,11 @@
 module "frontend-ami" {
-  source      = "github.com/ChaitanyaChandra/terraform-ami"
-  COMPONENT   = "frontend"
-  APP_VERSION = var.APP_VERSION
+  source         = "github.com/ChaitanyaChandra/terraform-ami"
+  COMPONENT      = "frontend"
+  APP_VERSION    = var.APP_VERSION
   NEXUS_USERNAME = var.NEXUS_USERNAME
   NEXUS_PASSWORD = var.NEXUS_PASSWORD
-  ENV = var.ENV
-  PROJECT = var.PROJECT
+  ENV            = var.ENV
+  PROJECT        = var.PROJECT
 }
 
 variable "APP_VERSION" {}
